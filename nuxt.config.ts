@@ -7,5 +7,9 @@ export default defineNuxtConfig({
     preset: "cloudflare-pages"
   },
 
-  modules: ["nitro-cloudflare-dev"]
+  image: {
+    dir: 'assets'
+  },
+
+  modules: ["nitro-cloudflare-dev", "@nuxtjs/tailwindcss", "@nuxt/image"]
 })
